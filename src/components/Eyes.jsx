@@ -22,7 +22,7 @@ const Eyes = () => {
       <div
         data-scroll
         data-scroll-speed="-.7"
-        className="relative w-full h-full bg-cover bg-center"
+        className="relative w-full h-full bg-contain bg-no-repeat bg-center"
         style={{ backgroundImage: `url(${asset2})` }}
       >
         <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
@@ -34,7 +34,7 @@ const Eyes = () => {
                 }}
                 className="line absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-full h-10"
               >
-                <div className="w-10 h-10 rounded-full bg-zinc-100"></div>
+                <div className="w-5 h-5 lg:w-10 lg:h-10 rounded-full bg-zinc-100"></div>
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Eyes = () => {
                 }}
                 className="line absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-full h-10"
               >
-                <div className="w-10 h-10 rounded-full bg-zinc-100"></div>
+                <div className="w-5 h-5 lg:w-10 lg:h-10 rounded-full bg-zinc-100"></div>
               </div>
             </div>
           </div>
