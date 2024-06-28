@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         neue: ["Neue", "sans-serif"],
+        founder: ["Founder"],
       },
     },
   },

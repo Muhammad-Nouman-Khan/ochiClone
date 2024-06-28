@@ -6,3 +6,8 @@
   font-family: "Neue";
   src: url("/neu.ttf");
 }
+
+@font-face {
+  font-family: "Founder";
+  src: url("/FoundersGroteskXCondBold.otf");
+}

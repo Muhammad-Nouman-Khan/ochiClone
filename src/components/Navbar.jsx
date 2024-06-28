@@ -1,12 +1,13 @@
 import { logo } from "../assets";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 const Navbar = () => {
   return (
-    <div className="fixed z-[999] w-full px-20 py-5 flex justify-between items-center">
+    <div className="fixed z-[999] w-full p-4  lg:px-20 lg:py-5 flex justify-between items-center">
       <div className="logo">
         <img src={logo} alt="Logo" />
       </div>
-      <div className="links  font-neue flex gap-10 capitalize">
+      <div className="links hidden  font-neue lg:flex gap-10 capitalize">
         {["Services", "Our Work", "About Us", "Insights", "Contact"].map(
           (item, index) => (
             <a
@@ -18,6 +19,7 @@ const Navbar = () => {
           )
         )}
       </div>
+      <HiOutlineMenuAlt4 className="lg:hidden flex" />
     </div>
   );
 };

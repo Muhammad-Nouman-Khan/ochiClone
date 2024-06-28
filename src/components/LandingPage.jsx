@@ -1,16 +1,29 @@
+import { motion } from "framer-motion";
 import { FaArrowUpLong } from "react-icons/fa6";
+import { asset5 } from "../assets";
 
 const LandingPage = () => {
   return (
-    <div className="w-full h-screen pt-1 bg-[#F1F1F1]">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.3"
+      className="w-full h-screen pt-1 bg-[#F1F1F1]"
+    >
       <div className="textstructure mt-52 px-20">
         {["We Create", "Eye-Opening", "Presentations"].map((item, index) => (
           <div key={index} className="masker">
             <div className="w-fit flex item-end overflow-hidden">
               {index === 1 && (
-                <div className="mr-5 w-[8vw] rounded-md h-[5vw] top-[1vw] relative bg-red-500"></div>
+                <motion.div
+                  style={{ backgroundImage: `url(${asset5})` }}
+                  initial={{ width: 0 }}
+                  animate={{ width: "9vw" }}
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                  className="mr-2 w-[8vw] rounded-md h-[5vw] top-[0.3vw] relative"
+                ></motion.div>
               )}
-              <h1 className="leading-none tracking-tighter font-semibold uppercase text-[7vw]">
+              <h1 className="font-founder leading-none font-semibold uppercase -mb-[2vw] text-[9vw]">
                 {item}
               </h1>
             </div>

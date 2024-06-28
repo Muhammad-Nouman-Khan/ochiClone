@@ -18,8 +18,10 @@ const Eyes = () => {
   });
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen overflow-hidden">
       <div
+        data-scroll
+        data-scroll-speed="-.7"
         className="relative w-full h-full bg-cover bg-center"
         style={{ backgroundImage: `url(${asset2})` }}
       >

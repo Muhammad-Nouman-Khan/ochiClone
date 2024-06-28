@@ -6,17 +6,24 @@ import About from "./components/About";
 import Eyes from "./components/Eyes";
 import Featured from "./components/Featured";
 import Cards from "./components/Cards";
+import Footer from "./components/Footer";
+import LocomotiveScroll from "locomotive-scroll";
 
-const App = () => (
-  <div className="w-full min-h-screen bg-[#F1F1F1]">
-    <Navbar />
-    <LandingPage />
-    <Marquee />
-    <About />
-    <Eyes />
-    <Featured />
-    <Cards />
-  </div>
-);
+const App = () => {
+  const locomotiveScroll = new LocomotiveScroll();
+
+  return (
+    <div className="w-full min-h-screen bg-[#F1F1F1]">
+      <Navbar />
+      <LandingPage />
+      <Marquee />
+      <About />
+      <Eyes />
+      <Featured />
+      <Cards />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
