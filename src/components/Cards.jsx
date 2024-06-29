@@ -20,7 +20,7 @@ const Cards = () => {
         </div>
         <div className="card relative w-1/2 flex items-center justify-center h-full rounded-xl bg-[#212121]">
           <img className="w-28" src={logo3} alt="" />
-          <button className="lg:text-sm absolute text-white rounded-3xl xl:left-10 px-2  py-1 text-xs md:text-lg border-[1px] bottom-10">
+          <button className="lg:text-sm absolute text-white rounded-3xl xl:left-10 px-2  py-1 text-xs border-[1px] bottom-10">
             BUSINESS BOOTCAMP ALUMINI
           </button>
         </div>

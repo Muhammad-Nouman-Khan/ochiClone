@@ -8,7 +8,7 @@ const Marquee = () => {
       data-scroll-speed="0.1"
       className="w-full py-10 mt-24 lg:mt-0 rounded-tl-3xl rounded-tr-3xl bg-[#004D43]"
     >
-      <div className="flex whitespace-nowrap overflow-hidden mt-20 text-white text border-t-[1px] border-b-[1px] border-zinc-500">
+      <div className="flex whitespace-nowrap overflow-hidden mt-5 lg:mt-20 text-white text border-t-[1px] border-b-[1px] border-zinc-500">
         <motion.h1
           initial={{ x: "0" }}
           animate={{ x: "-100%" }}

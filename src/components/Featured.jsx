@@ -44,7 +44,7 @@ const Featured = () => {
             onMouseLeave={() => handleHoverEnd(1)}
             className="card__container relative md:w-1/2 md:h-[40vw] "
           >
-            <h1 className="text-[#CDEA68] overflow-hidden flex font-semibold absolute left-1/3 md:right-full md:translate-x-1/2 top-1/2 -translate-y-1/2  z-[9] leading-none tracking-tighter text-8xl">
+            <h1 className="text-[#CDEA68] overflow-hidden flex font-semibold absolute right-1/3 md:right-full md:translate-x-1/2 top-1/2 -translate-y-1/2  z-[9] leading-none tracking-tighter text-8xl">
               {"VISE".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
